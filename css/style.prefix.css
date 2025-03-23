@@ -53,6 +53,11 @@ body {
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
+.tamaño_cartas{
+margin: auto;
+padding-bottom:20px;
+font-weight: bold;
+}
 #game {
   margin: auto;
   width: 100%;
@@ -68,6 +73,9 @@ body {
   cursor: crosshair;
   max-width: 250px;
   max-height: 250px;
+}
+.front{
+  height: 100%;
 }
 #score {
   margin-bottom: 30px;

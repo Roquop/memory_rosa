@@ -162,3 +162,28 @@ levelBtns.addEventListener('click', function (event) {
 
 // Inicializar el juego en nivel fácil
 setGameLevel('easy');
+
+// Variables
+document.getElementById('mas').addEventListener('click', function () {
+  // Selecciona todas las cartas
+  const cards = document.querySelectorAll('.card');
+
+  // Para cada carta, ajusta su tamaño
+  cards.forEach(card => {
+    // Ajusta el width utilizando calc()
+    card.style.width = `calc(${getComputedStyle(card).width} + 50px)`;
+    // Ajusta el height utilizando calc()
+    card.style.height = `calc(${getComputedStyle(card).height} + 50px)`;
+  });
+});
+
+document.getElementById('menos').addEventListener('click', function () {
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    // Ajusta el width utilizando calc()
+    card.style.width = `calc(${getComputedStyle(card).width} - 50px)`;
+    // Ajusta el height utilizando calc()
+    card.style.height = `calc(${getComputedStyle(card).height} - 50px)`;
+  });
+});
