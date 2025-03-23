@@ -4,25 +4,25 @@ var cardsArray = [{
   'name': 'grande1',
   'img': 'img/grande1.png'
 }, {
+  'name': 'grande2',
+  'img': 'img/grande2.png'
+}, {
   'name': 'grande4',
   'img': 'img/grande4.png'
 }, {
   'name': 'grande5',
   'img': 'img/grande5.png'
 }, {
-  'name': 'grande9',
-  'img': 'img/grande9.png'
+  'name': 'grande6',
+  'img': 'img/grande6.png'
 }, {
-  'name': 'grande2',
-  'img': 'img/grande10.png'
+  'name': 'grande7',
+  'img': 'img/grande7.png'
 }, {
-  'name': 'grande11',
-  'img': 'img/grande11.png'
+  'name': 'grande8',
+  'img': 'img/grande8.png'
 }, {
-  'name': 'grande12',
-  'img': 'img/grande12.png'
-}, {
-  'name': 'mushrabuelanieto1oom',
+  'name': 'abuelanieto1',
   'img': 'img/abuelanieto1.png'
 }, {
   'name': 'nietobebe1',
@@ -31,11 +31,14 @@ var cardsArray = [{
   'name': 'todos1',
   'img': 'img/todos1.png'
 }, {
-  'name': 'grande6',
-  'img': 'img/grande6.png'
+  'name': 'grande9',
+  'img': 'img/grande9.png'
 }, {
-  'name': 'grande2',
-  'img': 'img/grande2.png'
+  'name': 'grande11',
+  'img': 'img/grande10.png'
+}, {
+  'name': 'grande12',
+  'img': 'img/grande11.png'
 }];
 
 var levelBtns = document.getElementById('level-buttons');
