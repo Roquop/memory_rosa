@@ -1,12 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-
+}
+details {
+  cursor: pointer;
+  background-color: white;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 0 20px;
+  margin: 20px auto;
+}
+details:open {
+  cursor: pointer;
+  background-color: white;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 0 20px 20px 20px;
+}
+summary {
+  padding: 5px;
 }
 h1 {
   font-family: "Winky Sans", sans-serif;
@@ -46,6 +63,13 @@ body {
   cursor: crosshair;
   max-width: 300px;
   max-height: 300px;
+}
+#score {
+  margin-bottom: 5px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px 0;
+  font-weight: bold;
 }
 .enlace_sub {
   text-decoration: underline;
@@ -117,6 +141,7 @@ header {
 }
 #level-buttons {
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 button {
