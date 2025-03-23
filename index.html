@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
   <title>Memory Game</title>
 
   <link rel="stylesheet" href="css/style.prefix.css">
@@ -14,9 +14,19 @@
 </head>
 
 <body>
-
+  <header>
+    <h1>¿La abuela Lola ya no se acuerda de mi? </h1>
+    <div>
+      <div id="level-buttons">
+        <button data-level="easy">Fácil</button>
+        <button data-level="medium">Medio</button>
+        <button data-level="hard">Difícil</button>
+      </div>
+      <p id="score">Puntuación actual: 0</p>
+      <p id="best-score">Mejor puntuación: 0</p>
+    </div>
+  </header>
   <div id="game"></div>
-
   <script src="js/script.babel.js"></script>
 </body>
 
