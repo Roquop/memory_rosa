@@ -35,7 +35,7 @@ body {
   justify-content: space-evenly;
 }
 #game {
-  padding-bottom: 30px;
+  margin: auto;
 }
 .card,
 .back,
