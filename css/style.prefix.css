@@ -28,6 +28,7 @@ summary {
 h1 {
   font-family: "Winky Sans", sans-serif;
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 body {
   margin: 0;
@@ -41,6 +42,7 @@ body {
   object-fit: contain;
 }
 .grid {
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,6 +55,8 @@ body {
 }
 #game {
   margin: auto;
+  width: 100%;
+  max-width: 1200px;
 }
 .card,
 .back,
@@ -61,11 +65,11 @@ body {
   width: 100%;
   border-radius: 15px;
   cursor: crosshair;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 250px;
 }
 #score {
-  margin-bottom: 5px;
+  margin-bottom: 30px;
   background-color: white;
   border-radius: 15px;
   padding: 5px 0;
@@ -107,9 +111,9 @@ footer p {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   margin: 5px;
-  width: 22vw;
-  max-width: 300px;
-  max-height: 300px;
+  width: 22%;
+  max-width: 250px;
+  max-height: 250px;
 }
 .front {
   background: #fab942 url("../img/raton1.png") no-repeat center center / contain;
