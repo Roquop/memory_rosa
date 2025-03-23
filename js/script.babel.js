@@ -13,7 +13,7 @@ var cardsArray = [{
   'name': 'grande9',
   'img': 'img/grande9.png'
 }, {
-  'name': 'grande10',
+  'name': 'grande2',
   'img': 'img/grande10.png'
 }, {
   'name': 'grande11',
@@ -40,7 +40,6 @@ var cardsArray = [{
 
 var levelBtns = document.getElementById('level-buttons');
 var scoreDisplay = document.getElementById('score');
-var bestScoreDisplay = document.getElementById('best-score');
 var gameGrid = [];
 var firstGuess = '';
 var secondGuess = '';
@@ -48,9 +47,7 @@ var count = 0;
 var previousTarget = null;
 var delay = 1200;
 var score = 0;
-var bestScore = localStorage.getItem('bestScore') || 0; // Guarda la mejor puntuación en localStorage
 
-bestScoreDisplay.textContent = 'Mejor puntuación: ' + bestScore;
 
 function setGameLevel(level) {
   if (level === 'easy') {
@@ -98,7 +95,7 @@ function createCards() {
   // Resetear puntuaciones
   count = 0;
   score = 0;
-  scoreDisplay.textContent = 'Puntuación actual: ' + score;
+  scoreDisplay.textContent = 'Parejas Encontradas: ' + score;
 
   // Mover el evento de clic aquí, dentro de la función createCards()
   grid.addEventListener('click', function (event) {
@@ -120,12 +117,12 @@ function createCards() {
 
       if (firstGuess && secondGuess) {
         if (firstGuess === secondGuess) {
-          score += 5; // Sumar puntos
+          score += 1; // Sumar puntos
           setTimeout(match, delay);
         } else if (count > 4) {
           score -= 1; // Restar puntos si fallas después de las primeras 4 cartas
         }
-        scoreDisplay.textContent = 'Puntuación actual: ' + score;
+        scoreDisplay.textContent = 'Parejas Encontradas: ' + score;
         setTimeout(resetGuesses, delay);
       }
       previousTarget = clicked;
